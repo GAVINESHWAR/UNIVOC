@@ -13,7 +13,7 @@ const benefitsData = [
       ]
     },
     {
-      title: 'BENEFITS TO INDUSTRIES IN TERMS OF SELECTION OF CANDIDATES',
+      title: 'SELECTION OF CANDIDATES',
       description: [
         {content:'Industry partners can accommodate trainees (regular,contractual apprentices, and casual) according to their shift timings.'},
         {content:'As it completes regular & vocational education programs, any candidate or student either 10th Pass/8th Pass/ Graduates/ Dropouts can be enrolled.'},

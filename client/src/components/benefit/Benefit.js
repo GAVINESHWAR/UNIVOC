@@ -3,7 +3,7 @@ import React from 'react';
 import { FaCheckCircle, FaRegSmile, FaRocket, FaUserShield } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import benefitsData from '../BenefitsData';
-import '../benefit/Benefits.css';
+import './Benefit.css';
 
 const Benefits = () => {
   const navigate = useNavigate();
