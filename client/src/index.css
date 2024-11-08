@@ -1,9 +1,16 @@
 
 .App {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
   background-color: #f9f9f9;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/* src/index.css or your main CSS file */
+
+/* Tailwind's default styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
