@@ -1,32 +1,74 @@
 import React from 'react';
-import logo from '../assets/logo.png'
+import logo from '../../images/logo2.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhoneAlt, faEnvelope, faTags, faBell } from '@fortawesome/free-solid-svg-icons';
+
+
 
 const Navbar = () => {
   return (
     <>
       {/* Top bar with contact info */}
-      <div className="bg-blue-600 text-white py-2 w-full z-20 flex overflow-hidden">
-        <div className="whitespace-nowrap animate-scroll flex items-center space-x-16 px-4">
-          <span className="mr-4 px-3 hover:text-yellow-300 transition cursor-pointer">1800-XXXX-XXXX</span>
-          <span className='px-3 hover:text-yellow-300 transition cursor-pointer'>info@Univoc.com</span>
-          <span className='px-3 hover:text-yellow-300 transition cursor-pointer'>Exclusive Discounts Available Now!</span>
-          <span className='px-3 hover:text-yellow-300 transition cursor-pointer'>Sign Up for Latest Updates</span>
+      
+      <div className="bg-gradient-to-r from-[#4f8729] to-[#3b6d21] text-white py-2 w-full z-10 shadow-lg overflow-hidden flex justify-center items-center">
+        <div className="whitespace-nowrap flex items-center space-x-8 px-2 animate-scroll gap-5">
+
+          <span className="flex items-center space-x-2 text-sm font-semibold px-4 py-1 rounded-full bg-white/10 hover:bg-white/20 cursor-pointer transition-all ease-in-out duration-300">
+            <FontAwesomeIcon icon={faPhoneAlt} className="text-yellow-300" />
+            <span>1800-XXXX-XXXX</span>
+          </span>
+
+          <span className="flex items-center space-x-2 text-sm font-semibold px-4 py-1 rounded-full bg-white/10 hover:bg-white/20 cursor-pointer transition-all ease-in-out duration-300">
+            <FontAwesomeIcon icon={faEnvelope} className="text-yellow-300" />
+            <span>info@Univoc.com</span>
+          </span>
+
+          <span className="flex items-center space-x-2 text-sm font-semibold px-4 py-1 rounded-full bg-white/10 hover:bg-white/20 cursor-pointer transition-all ease-in-out duration-300">
+            <FontAwesomeIcon icon={faTags} className="text-yellow-300" />
+            <span>Exclusive Discounts Available Now!</span>
+          </span>
+
+          <span className="flex items-center space-x-2 text-sm font-semibold px-4 py-1 rounded-full bg-white/10 hover:bg-white/20 cursor-pointer transition-all ease-in-out duration-300">
+            <FontAwesomeIcon icon={faBell} className="text-yellow-300" />
+            <span>Sign Up for Latest Updates</span>
+          </span>
         </div>
       </div>
 
-      {/* Navbar section*/}
-      <div className="bg-blue-900 text-white p-3 flex justify-between items-center mt-13 ">
+
+
+      {/* Navbar section */}
+      <div className="p-2 mb-2 flex justify-between items-center max-w-full transition-all ease-in-out bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300 shadow-md">
+  
+        {/* Logo */}
         <div className="text-lg font-bold">
-          <img src={logo} alt="Univoc Logo" className="h-14 w-auto" /> 
+          <img src={logo} alt="Univoc Logo" className="h-12 w-auto mx-3 transition-transform duration-300 transform hover:scale-105" />
         </div>
 
-        <div className="space-x-4">
-          <a href="#contact" className="hover:underline">Contact</a>
-          <a href="#about" className="hover:underline">About</a>
-          <a href="#register" className="hover:underline">Register</a>
-          <a href="#services" className="hover:underline">Services</a>
+        {/* Desktop Navigation Links */}
+        
+        <div className="space-x-6 font-semibold mx-3 hidden md:flex items-center text-black">
+          <a href="#contact" className="transition-all duration-300 ease-in-out text-gray-800 bg-transparent border-b-2 border-transparent hover:text-blue-600 hover:border-blue-600 py-2 px-4 rounded">Contact</a>
+
+          <a href="#about" className="transition-all duration-300 ease-in-out text-gray-800 bg-transparent border-b-2 border-transparent hover:text-blue-600 hover:border-blue-600 py-2 px-4 rounded" >About</a>
+
+          <a href="#register" className="transition-all duration-300 ease-in-out text-gray-800 bg-transparent border-b-2 border-transparent hover:text-blue-600 hover:border-blue-600 py-2 px-4 rounded"> Register </a>
+
+        
+          <a href="#services" className="transition-all duration-300 ease-in-out text-gray-800 bg-transparent border-b-2 border-transparent hover:text-blue-600 hover:border-blue-600 py-2 px-4 rounded" > Services </a>
+        </div>
+
+
+        {/* Mobile menu button */}
+        <div className="md:hidden flex items-center">
+          <button className="text-white focus:outline-none transition-transform transform hover:scale-110" onClick={() => setIsOpen(!isOpen)}>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-6 w-6">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
       </div>
+
     </>
   );
 };
