@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from './ui/carousel';
 import image1 from '../images/pexels-julia-m-cameron-4144222.jpg';
 import image2 from '../images/pexels-kindelmedia-7688336.jpg';
@@ -7,9 +7,16 @@ import image4 from '../images/pexels-polina-tankilevitch-4443160.jpg';
 import features1 from '../images/features1.jpg';
 import features2 from '../images/features2.jpg';
 import features4 from '../images/features4.jpg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const HomeSection = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 2000, once: true }); // Initialize AOS with options
+  }, []);
+
   return (
     <>
       {/* Hero Section with Carousel */}
@@ -89,14 +96,14 @@ const HomeSection = () => {
       
       <div className="p-8 bg-gradient-to-r from-cyan-200 via-blue-200 to-orange-100 mt-12 mb-12">
         {/* Heading */}
-        <h2 className="text-5xl font-extrabold text-center mb-10 tracking-wide leading-tight"> Features</h2>
+        <h2 data-aos="fade-down" className="text-5xl font-extrabold text-center mb-10 tracking-wide leading-tight"> Features</h2>
 
 
         {/* Feature Boxes Section */}
         <div className=" justify-center ">
 
           {/* Objectives Box */}
-          <div className="flex mr-8 ml-8 gap-14 mb-8 h-[40vh] ">
+          <div data-aos="fade-right" className="flex mr-8 ml-8 gap-14 mb-8 h-[40vh] ">
             
             <div className="bg-white shadow-lg p-7 rounded-lg w-1/2 text-center transition-all duration-300 transform hover:bg-gray-200 hover:shadow-xl hover:scale-105 hover:transition-transform">
               <div className="flex items-center justify-center mb-4 mt-4">
@@ -121,7 +128,7 @@ const HomeSection = () => {
           </div>
 
           {/* Mission Box */}
-          <div className="flex mr-8 ml-8 gap-14 mb-8 h-[40vh]">
+          <div data-aos="fade-left" className="flex mr-8 ml-8 gap-14 mb-8 h-[40vh]">
 
             {/* Right Column (Image) */}
             <div className="w-1/2">
@@ -148,7 +155,7 @@ const HomeSection = () => {
           </div>
 
           {/* Vision Box */}
-          <div className="flex mr-8 ml-8 gap-14 mb-8 h-[40vh]">
+          <div data-aos="fade-right" className="flex mr-8 ml-8 gap-14 mb-8 h-[40vh]">
             {/* Left Column (Vision and Data) */}
             <div className="bg-white shadow-lg p-7 rounded-lg w-1/2 text-left transition-all duration-300 transform hover:bg-gray-200 hover:shadow-xl hover:scale-105">
               <div className="flex items-center mb-4">

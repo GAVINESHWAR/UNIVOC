@@ -1,11 +1,15 @@
 
-import React from 'react';
+import React, {useEffect} from 'react';
 import { FaCheckCircle, FaRegSmile, FaRocket, FaUserShield } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import benefitsData from '../BenefitsData';
 import './Benefit.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Benefits = () => {
+
+
   const navigate = useNavigate();
 
   const iconMapping = {
@@ -19,10 +23,15 @@ const Benefits = () => {
     navigate(`/benefit/${id}`);
   };
 
+  useEffect(() => {
+    AOS.init({ duration: 2000, once: true }); // Initialize AOS with options
+  }, []);
+
   return (
+
     <div className="benefit-section">
-      <h2 className="benefits-heading">Benefits</h2>
-      <div className="benefits-container">
+      <h2 data-aos="fade-up" className="benefits-heading">Benefits</h2>
+      <div data-aos="fade-down" className="benefits-container">
         {benefitsData.map((benefit, index) => {
           const icon = iconMapping[benefit.title] || <FaRegSmile className="benefit-icon" />;
           return (
