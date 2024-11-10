@@ -6,15 +6,15 @@ import Benefits from "./components/benefit/Benefit.js";
 import BenefitDetail from "./components/benefitDetail/BenefitDetail.js";
 import Navbar from "./components/navbar/Navbar.jsx";
 import HomeSection from "./components/HomeSection.jsx";
-import Testimonials from "./components/testimonials/Testimonials";
-import './index.css'; // or import './path-to-your-css-file.css';
+import Testimonials from "./components/testimonials/Testimonials.js";
+import Footer from "./components/footer/Footer.js";
 
 
 function App() {
   
   return (
     <div className="App">
-      {/* <HomeSection/> */}
+      
       <Navbar/>
       <HomeSection/>
       <BrowserRouter>
@@ -25,6 +25,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       <Testimonials/>
+      <Footer/>
 
     </div>
   );
