@@ -59,36 +59,36 @@ const Testimonials = () => {
       <section className="testimonial-section">
         <h3 className="testimonial-section-title-h3">Testimonials</h3>
         <Swiper
-    loop={true}
-    centeredSlides={true}
-    slidesPerView="auto"
-    spaceBetween={30}
-    autoplay={{ delay: 3000, pauseOnHover: true }}
-    effect="coverflow"
-    coverflowEffect={{
-        rotate: 0,
-        stretch: 50,
-        depth: 300,
-        modifier: 1,
-        slideShadows: false,
-    }}
-    grabCursor={true}
-    modules={[Autoplay]}
-    breakpoints={{
-        640: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-        },
-        768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
-        1024: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-        },
-    }}
->
+            loop={true}
+            centeredSlides={true}
+            slidesPerView="auto"
+            spaceBetween={30}
+            autoplay={{ delay: 3000, pauseOnHover: true }}
+            effect="coverflow"
+            coverflowEffect={{
+                rotate: 0,
+                stretch: 50,
+                depth: 300,
+                modifier: 1,
+                slideShadows: false,
+            }}
+            grabCursor={true}
+            modules={[Autoplay]}
+            breakpoints={{
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            }}
+        >
 
 
           {testimonialsData.map((testimonial, index) => (

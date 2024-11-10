@@ -31,7 +31,7 @@
 /* Swiper Container */
 .swiper {
     width: 100%;
-    height: 100%;
+    height: 70%;
 }
 
 /* Swiper Slide */
@@ -56,9 +56,8 @@
 
 /* Testimonial Card */
 .testimonial-card {
-    width: 62rem;
-    height: 15rem;
-    margin-top: 3rem;
+    width: 60rem;
+    height: 13rem;
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
     border-radius: 2rem;
 }
@@ -73,7 +72,7 @@
 }
 
 .testimonial-name {
-    margin-top: 3rem;
+    margin-top: 1rem;
     display: block;
 }
 
@@ -94,7 +93,7 @@
     height: 4rem;
     border-radius: 50%;
     margin-left: 3rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 /* Testimonial Icon */
 .testimonial-icon {
