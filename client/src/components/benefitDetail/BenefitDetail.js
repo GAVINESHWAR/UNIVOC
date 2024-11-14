@@ -1,5 +1,4 @@
 
-import React from 'react';
 import { useParams } from 'react-router-dom';
 import benefitsData from '../BenefitsData';
 import '../benefitDetail/BenefitDetail.css';
@@ -14,7 +13,7 @@ const BenefitDetail = () => {
 
   return (
     <div className="data-detail">
-      <h2 className="data-title">{benefit.title}</h2>
+      <h2 className="data-title" >{benefit.title}</h2>
       <div className="data-cards">
         {benefit.description.map((section, index) => (
           <div key={index} className="data-card">

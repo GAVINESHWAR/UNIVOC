@@ -1,0 +1,36 @@
+.partners-section {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .partners-section-title {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  
+  .partners-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1 !important;
+    filter: none !important;
+  }
+  .partner-img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+    padding: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    opacity: 1;
+    filter: none;
+  }
+  .partner-img:hover{
+    transform: scale(1.2);
+  }
+  

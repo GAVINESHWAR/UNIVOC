@@ -1,11 +1,11 @@
 
-import React, {useEffect} from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 import { FaCheckCircle, FaRegSmile, FaRocket, FaUserShield } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import benefitsData from '../BenefitsData';
 import './Benefit.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const Benefits = () => {
 
@@ -18,9 +18,9 @@ const Benefits = () => {
     "INDUSTRIES BENEFITS": <FaRocket className="benefit-icon" />,
     "BENEFITS TO TRAINEE": <FaUserShield className="benefit-icon" />
   };
-
   const handleCardClick = (id) => {
-    navigate(`/benefit/${id}`);
+    // Open the benefit detail in a new window
+    window.open(`/benefit/${id}`, '_blank', 'noopener, noreferrer');
   };
 
   useEffect(() => {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import '../benefitCard/BenefitCard.css';
 
 function BenefitCard({ title, description }) {
