@@ -1,0 +1,26 @@
+
+.App {
+  font-family: 'Poppins', Arial, sans-serif;
+  min-height: 100vh;
+}
+
+
+/* src/index.css or your main CSS file */
+
+/*Navbar Top Bar Animation Part */
+@keyframes scroll {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-scroll {
+    animation: scroll 15s linear infinite;
+  }
+
+ @tailwind base;
+@tailwind components;
+@tailwind utilities;
