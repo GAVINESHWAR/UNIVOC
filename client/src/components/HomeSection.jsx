@@ -19,7 +19,7 @@ const HomeSection = () => {
     // Set up interval to automatically change slides every 3 seconds (3000ms)
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length); // Loop through images
-    }, 4000); // Adjust the time as needed
+    }, 3000); // Adjust the time as needed
 
     // Clear the interval when the component is unmounted
     return () => clearInterval(intervalId);

@@ -20,15 +20,17 @@ const partners = [
 
 const Partners = () => {
   return (
-    <section className="partners-section">
-      <h3 className="partners-section-title">Our Partners</h3>
+    <section className="partners-section py-16">
+      <h3 className="partners-section-title text-4xl font-semibold text-center text-gray-800 mb-8">
+        Our Trusted Partners
+      </h3>
       <Swiper
         modules={[Autoplay]}
         autoplay={{ delay: 2000, pauseOnHover: true }}
         spaceBetween={20}
         slidesPerView={6}
         loop={true}
-        centeredSlides={true}  // Optional, depending on layout preference
+        centeredSlides={true}
         grabCursor={true}
         breakpoints={{
           480: { slidesPerView: 2, spaceBetween: 20 },
@@ -38,7 +40,11 @@ const Partners = () => {
       >
         {partners.map((partner, index) => (
           <SwiperSlide key={index} className="partners-slide">
-            <img src={partner} alt={`Partner ${index + 1}`} className="partner-img" />
+            <img
+              src={partner}
+              alt={`Partner ${index + 1}`}
+              className="partner-img object-contain p-4 rounded-lg shadow-lg"
+            />
           </SwiperSlide>
         ))}
       </Swiper>

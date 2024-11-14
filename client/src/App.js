@@ -1,7 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// App.js
-
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import './index.css';
 
 import About from "./components/about/About";
@@ -30,33 +27,17 @@ function AppContent() {
             <Navbar />
             <HomeSection />
             <Features/>
+            <Benefits/>
+            <Partners/>
             <Testimonials />
             <Footer />
           </>
         }
       />
-
       {/* Other Routes */}
       <Route path="/about" element={<About />} />
       <Route path="/benefit/:id" element={<BenefitDetail />} />
     </Routes>
-  const location = useLocation();
-  const isAboutPage = location.pathname === "/about";
-  const isBenefitDetailPage = location.pathname.startsWith("/benefit/");
-
-  return (
-    <>
-      {!isBenefitDetailPage && <Navbar />}
-      {!isAboutPage && !isBenefitDetailPage && <HomeSection />}
-      <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="/" element={<Benefits />} />
-        <Route path="/benefit/:id" element={<BenefitDetail />} />
-      </Routes>
-      {!isBenefitDetailPage && <Partners />}
-      {!isBenefitDetailPage && <Testimonials />}
-      {!isBenefitDetailPage && <Footer />}
-    </>
   );
 }
 

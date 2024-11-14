@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 
 const Features = () => {
     useEffect(() => {
-        AOS.init({ duration: 2000, once: true }); // Initialize AOS with options
+        AOS.init({ duration: 1000, once: true }); // Initialize AOS with options
       }, []);
   return (
     <div className="p-8 bg-gradient-to-r from-cyan-200 via-blue-200 to-orange-100 mt-12 mb-12">

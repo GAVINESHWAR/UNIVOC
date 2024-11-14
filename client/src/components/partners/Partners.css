@@ -1,36 +1,67 @@
 .partners-section {
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
+  width: 100%;
+  padding: 50px 0; /* Increased padding for better spacing */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+.partners-section-title {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-size: 3rem; /* Larger font size */
+  font-weight: 600;
+  color: #333; /* Darker color for better contrast */
+  text-align: center;
+  letter-spacing: 1px; /* Adds spacing between characters */
+}
+
+.partners-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+.partner-img {
+  width: 100%;
+  max-width: 180px; /* Increased max-width for better image size */
+  height: auto;
+  object-fit: contain;
+  padding: 10px; /* Increased padding for better spacing around the images */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 1;
+  filter: none;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.partner-img:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+@media screen and (max-width: 1024px) {
+  .partners-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
-  
+
   .partners-section-title {
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 600;
+    font-size: 2.5rem; /* Adjust font size for tablets */
   }
-  
-  .partners-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1 !important;
-    filter: none !important;
-  }
+
   .partner-img {
-    width: 100%;
-    max-width: 150px;
-    height: auto;
-    object-fit: contain;
-    padding: 5px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    opacity: 1;
-    filter: none;
+    max-width: 130px; /* Adjust image size for tablets */
   }
-  .partner-img:hover{
-    transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+  .partners-section-title {
+    font-size: 2rem; /* Smaller font size for mobile */
   }
-  
+
+  .partner-img {
+    max-width: 110px; /* Smaller image size for mobile */
+  }
+}
