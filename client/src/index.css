@@ -2,7 +2,15 @@
 .App {
   font-family: 'Poppins', Arial, sans-serif;
   min-height: 100vh;
+  background-color: linear-gradient(to bottom, #AEDDFF, #FFFFFF);
 }
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #AEDDFF, #FFFFFF);
+  margin: 0;
+}
+
 
 
 /* src/index.css or your main CSS file */
