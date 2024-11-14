@@ -8,7 +8,9 @@ import Footer from "./components/footer/Footer.js";
 import HomeSection from "./components/HomeSection.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
 import Testimonials from "./components/testimonials/Testimonials.js";
+import Features from "./components/features/features.js";
 import Banner from "./components/Banner.js";
+
 
 function AppContent() {
   return (
@@ -23,6 +25,7 @@ function AppContent() {
           <>
             <Navbar />
             <HomeSection />
+            <Features/>
             <Testimonials />
             <Footer />
           </>

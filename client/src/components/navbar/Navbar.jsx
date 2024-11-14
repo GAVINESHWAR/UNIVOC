@@ -32,7 +32,8 @@ const Navbar = () => {
       </div>
 
       {/* Navbar section */}
-      <div className="p-2 mb-2 flex justify-between items-center max-w-full transition-all ease-in-out bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300 shadow-md">
+      <div className="p-2 flex justify-between items-center max-w-full transition-all ease-in-out">
+        {/* bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300  shadow-md */}
         {/* Logo */}
         <div className="text-lg font-bold">
           <img src={logo} alt="Univoc Logo" className="h-12 w-auto mx-3 transition-transform duration-300 transform hover:scale-105" />
@@ -41,26 +42,37 @@ const Navbar = () => {
         {/* Desktop Navigation Links */}
         <div className="space-x-6 font-semibold mx-3 hidden md:flex items-center text-black">
           <ul className="flex space-x-6">
-            <li>
-              <NavLink to='/contact' className="transition-all duration-300 ease-in-out text-gray-800 bg-transparent border-b-2 border-transparent hover:text-blue-600 hover:border-blue-600 py-2 px-4 rounded">
-                Contact
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to='/about' className="transition-all duration-300 ease-in-out text-gray-800 bg-transparent border-b-2 border-transparent hover:text-blue-600 hover:border-blue-600 py-2 px-4 rounded">
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to='/register' className="transition-all duration-300 ease-in-out text-gray-800 bg-transparent border-b-2 border-transparent hover:text-blue-600 hover:border-blue-600 py-2 px-4 rounded">
-                Register
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to='/services' className="transition-all duration-300 ease-in-out text-gray-800 bg-transparent border-b-2 border-transparent hover:text-blue-600 hover:border-blue-600 py-2 px-4 rounded">
-                Services
-              </NavLink>
-            </li>
+
+          <li>
+            <NavLink 
+              to='/home' 
+              className="transition-all duration-300 ease-in-out text-white bg-yellow-500 border-b-2 border-transparent py-2 px-5 rounded-full shadow-md transform scale-105 hover:scale-95 hover:bg-yellow-600 hover:text-gray-100">
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/contact"
+              className="transition-all duration-300 ease-in-out text-white bg-pink-400 border-b-2 border-transparent py-2 px-5 rounded-full shadow-md transform scale-105 hover:scale-95 hover:bg-pink-600 hover:text-gray-100">
+              Contact
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to='/about' 
+              className="transition-all duration-300 ease-in-out text-white bg-cyan-400 border-b-2 border-transparent py-2 px-5 rounded-full shadow-md transform scale-105 hover:scale-95 hover:bg-cyan-600 hover:text-gray-100">
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to='/register' 
+              className="transition-all duration-300 ease-in-out text-white bg-orange-400 border-b-2 border-transparent py-2 px-5 rounded-full shadow-md transform scale-105 hover:scale-95 hover:bg-orange-600 hover:text-gray-100">
+              Register
+            </NavLink>
+          </li>
+
+            
           </ul>
         </div>
 
@@ -73,6 +85,8 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+
+      
     </>
   );
 };
