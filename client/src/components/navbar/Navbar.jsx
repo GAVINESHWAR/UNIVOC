@@ -46,28 +46,28 @@ const Navbar = () => {
           <li>
             <NavLink 
               to='/home' 
-              className="transition-all duration-300 ease-in-out text-white bg-yellow-500 border-b-2 border-transparent py-2 px-5 rounded-full shadow-md transform scale-105 hover:scale-95 hover:bg-yellow-600 hover:text-gray-100">
+              className="transition-all duration-300 ease-in-out text-white bg-gradient-to-r from-sky-500 to-blue-700 py-2 px-5 rounded-full shadow-lg transform scale-105 hover:scale-95 hover:from-sky-400 hover:to-blue-600">
               Home
             </NavLink>
           </li>
           <li>
             <NavLink
               to="/contact"
-              className="transition-all duration-300 ease-in-out text-white bg-pink-400 border-b-2 border-transparent py-2 px-5 rounded-full shadow-md transform scale-105 hover:scale-95 hover:bg-pink-600 hover:text-gray-100">
+              className="transition-all duration-300 ease-in-out text-white bg-gradient-to-r from-sky-500 to-blue-700 py-2 px-5 rounded-full shadow-lg transform scale-105 hover:scale-95 hover:from-sky-400 hover:to-blue-600">
               Contact
             </NavLink>
           </li>
           <li>
             <NavLink 
               to='/about' 
-              className="transition-all duration-300 ease-in-out text-white bg-cyan-400 border-b-2 border-transparent py-2 px-5 rounded-full shadow-md transform scale-105 hover:scale-95 hover:bg-cyan-600 hover:text-gray-100">
+              className="transition-all duration-300 ease-in-out text-white bg-gradient-to-r from-sky-500 to-blue-700 py-2 px-5 rounded-full shadow-lg transform scale-105 hover:scale-95 hover:from-sky-400 hover:to-blue-600">
               About
             </NavLink>
           </li>
           <li>
             <NavLink 
               to='/register' 
-              className="transition-all duration-300 ease-in-out text-white bg-orange-400 border-b-2 border-transparent py-2 px-5 rounded-full shadow-md transform scale-105 hover:scale-95 hover:bg-orange-600 hover:text-gray-100">
+              className="transition-all duration-300 ease-in-out text-white bg-gradient-to-r from-sky-500 to-blue-700 py-2 px-5 rounded-full shadow-lg transform scale-105 hover:scale-95 hover:from-sky-400 hover:to-blue-600">
               Register
             </NavLink>
           </li>
