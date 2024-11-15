@@ -1,112 +1,160 @@
-/* Content Inside the Card */
-.testimonial-card-body {
-    display: flex;
-    flex-direction: column;/*  Stack items vertically */
-    align-items: center;   /*  Center items horizontally */
-}
-
-/* Testimonial Image */
-.testimonial-image {
-    display: flex;
-    flex-direction: row; /* Keep image and text aligned horizontally */
-    align-items: center;
-}
-
-/* Testimonial Section Title */
-.testimonial-section-title-h3 {
-    margin-top: 5rem;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 600;
-}
 
 /* Testimonial Section */
 .testimonial-section {
-    height: 28rem;
-    position: relative;
     width: 100%;
+    height: 450px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 25px;
+background: linear-gradient(180deg, rgba(196, 232, 255, 0.60) 0%, rgba(209, 255, 200, 0.50) 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonial Section Title */
+.testimonial-title {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    gap: 20rem;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-section-title-h3 {
+    color: #525252;
+    font-family: Lato, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.prev, .next {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+    transform: scale(1.1);
 }
 
 /* Swiper Container */
 .swiper {
-    width: 100%;
-    height: 70%;
+    padding: 1rem 0;
 }
 
 /* Swiper Slide */
 .swiper-slide {
-    /* text-align: center; */
-    font-size: 18px;
-    background: #fff;
     display: flex;
     justify-content: center;
-    align-items: center;
-    opacity: 0.5;
-    filter: blur(2px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
     z-index: 1;
 }
-/* Active Slide Styles */
+
 .swiper-slide-active {
-    transform: scale(1.2);
-    z-index: 10;
     opacity: 1;
-    filter: blur(0);
+    z-index: 10;
 }
 
 /* Testimonial Card */
 .testimonial-card {
-    width: 60rem;
-    height: 13rem;
-    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
-    border-radius: 2rem;
+    width: 415px;
+    height: 250px;
+    flex-shrink: 0;
+    background: #fff;
+    
 }
 
 /* Content Inside the Card */
 .testimonial-card-body {
     display: flex;
-    align-items: flex-start;
-}
-.testimonial-image{
-    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 
+/* Testimonial Image */
+
+.testimonial-star-img {
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
+}
+.testimonial-image {
+    position: relative;
+}
+.testimonial-img {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+.testimonial-star {
+    display: flex;
+    transform: translateX(-50%);
+    color: #ffcc00; /* Golden color for the stars */
+    margin-top: 2rem;
+  }
+  
+  .testimonial-star i {
+    margin: 0 2px;
+    font-size: 18px; /* Adjust the size of the stars */
+  }
+
+/* Testimonial Name and Title */
 .testimonial-name {
-    margin-top: 1rem;
-    display: block;
+    color: #525252;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: .5rem;
+    margin-left: 1.5rem;
 }
 
 .testimonial-title-h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-left: 2rem;
+    color: #525252;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: .5rem;
+    margin-left: 1.5rem;
 }
 
 .testimonial-title-p {
-    font-size: 1rem;
-    text-align: start;
-    margin-left: 2rem;
+    color: #525252;
+font-family: Lato;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left: 1.5rem;
 }
-.testimonial-image > .testimonial-img {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    margin-left: 3rem;
-    margin-top: 1rem;
-}
-/* Testimonial Icon */
-.testimonial-icon {
-    width: 2rem;
-    height: auto;
-    align-self: flex-start;
-    margin-left: 3rem;
-}
-
-
+/* Testimonial Text */
 .testimonial-p {
-    margin-left: 3rem;
-    font-size: .8rem;
-    text-align: start;
+    font-size: 0.8rem;
+    color: #555;
+    margin-top: 1rem;
+    line-height: 1.5;
+    margin-left: 1.5rem;
 }
 
+/* Dots Navigation */
+.icon {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.icon circle {
+    cursor: pointer;
+    transition: fill 0.3s ease;
+    fill: #525252;
+    
+}
+.icon circle.active-icon {
+    fill: #FF008A; /* Color for active icon */
+    
+}
