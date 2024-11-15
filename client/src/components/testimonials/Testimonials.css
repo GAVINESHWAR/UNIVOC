@@ -25,16 +25,6 @@ background: linear-gradient(180deg, rgba(196, 232, 255, 0.60) 0%, rgba(209, 255,
     font-size: 2rem;
     font-weight: 700;
 }
-
-.prev, .next {
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.prev:hover, .next:hover {
-    transform: scale(1.1);
-}
-
 /* Swiper Container */
 .swiper {
     padding: 1rem 0;
@@ -138,23 +128,4 @@ margin-left: 1.5rem;
     margin-top: 1rem;
     line-height: 1.5;
     margin-left: 1.5rem;
-}
-
-/* Dots Navigation */
-.icon {
-    margin-top: 1.5rem;
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-}
-
-.icon circle {
-    cursor: pointer;
-    transition: fill 0.3s ease;
-    fill: #525252;
-    
-}
-.icon circle.active-icon {
-    fill: #FF008A; /* Color for active icon */
-    
 }
