@@ -23,13 +23,13 @@ exports.signup = async (req, res) => {
             email,
             phoneNumber,
             password: hashedPassword,
-            aadharCard: req.file ? req.file.path : null,
         });
 
         await newUser.save();
-        res.status(201).json({ message: 'User registered successfully' });
+        res.status(201).json({success: true, message: 'User registered successfully' });
     } catch (err) {
-        res.status(500).json({ message: err.message });
+        console.error("Signup Error:", err);
+        res.status(500).json({ message: "Internal server error" });
     }
 };
 
@@ -49,7 +49,7 @@ exports.login = async (req, res) => {
         // Generate JWT
         const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: '1d' });
 
-        res.status(200).json({ message: 'Login successful', token });
+        res.status(200).json({ success:true, message: 'Login successful', token });
     } catch (err) {
         res.status(500).json({ message: err.message });
     }
