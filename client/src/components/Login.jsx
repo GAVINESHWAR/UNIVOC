@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Navbar from './Navbar'
-import { Input } from './ui/input'
-import { Label } from './ui/label'
+import Navbar from '../components/navbar/Navbar'
+import Label from './ui/label';
+import Input from './ui/input';
 import { Button } from './ui/button'
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'

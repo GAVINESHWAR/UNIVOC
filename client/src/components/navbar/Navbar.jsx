@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../../images/logo2.png';
+import Register from '../Register';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -66,7 +67,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink 
-              to='/register' 
+              to='/Register' 
               className="transition-all duration-300 ease-in-out text-white bg-gradient-to-r from-sky-500 to-blue-700 py-2 px-5 rounded-full shadow-lg transform scale-105 hover:scale-95 hover:from-sky-400 hover:to-blue-600">
               Register
             </NavLink>

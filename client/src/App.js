@@ -11,6 +11,8 @@ import Partners from "./components/partners/Partners";
 import Testimonials from "./components/testimonials/Testimonials.js";
 import Features from "./components/features/features.js";
 import Banner from "./components/Banner.js";
+import Register from "./components/Register.jsx";
+import Login from "./components/Login.jsx";
 
 
 function AppContent() {
@@ -37,6 +39,8 @@ function AppContent() {
       {/* Other Routes */}
       <Route path="/about" element={<About />} />
       <Route path="/benefit/:id" element={<BenefitDetail />} />
+      <Route path="/Register" element={<Register />} />
+      <Route path="/Login" element={<Login />} />
     </Routes>
   );
 }
