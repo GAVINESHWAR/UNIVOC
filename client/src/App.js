@@ -9,7 +9,6 @@ import HomeSection from "./components/HomeSection.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
 import Partners from "./components/partners/Partners";
 import Testimonials from "./components/testimonials/Testimonials.js";
-import Features from "./components/features/features.js";
 import Register from "./components/Register.jsx";
 import Login from "./components/Login.jsx";
 import University from "./components/university/university";
@@ -26,7 +25,6 @@ function AppContent() {
             <Navbar />
             <HomeSection />
             <University/>
-            <Features /> 
             <Benefits />
             <Partners />
             <Testimonials />
