@@ -2,7 +2,7 @@ import { faBell, faEnvelope, faPhoneAlt, faTags } from '@fortawesome/free-solid-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../../images/logo2.png';
+import logo from '../../images/logo3-removebg-preview.png';
 import Register from '../Register';
 
 const Navbar = () => {
@@ -37,7 +37,7 @@ const Navbar = () => {
         {/* bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300  shadow-md */}
         {/* Logo */}
         <div className="text-lg font-bold">
-          <img src={logo} alt="Univoc Logo" className="h-12 w-auto mx-3 transition-transform duration-300 transform hover:scale-105" />
+          <img src={logo} alt="Univoc Logo" className="h-[25%] w-[25%] mx-1 transition-transform duration-300 transform hover:scale-105" />
         </div>
 
         {/* Desktop Navigation Links */}

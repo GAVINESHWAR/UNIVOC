@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from './ui/carousel';
-import image from '../images/UNIVOC banner design.png';
-import image1 from '../images/pexels-julia-m-cameron-4144222.jpg';
-import image2 from '../images/pexels-kindelmedia-7688336.jpg';
-import image3 from '../images/pexels-pixabay-38519.jpg';
-import image4 from '../images/pexels-polina-tankilevitch-4443160.jpg';
+
+import banner1 from '../images/banner1.png';
+import banner2 from '../images/banner2.png';
+import banner3 from '../images/banner3.png';
+import banner4 from '../images/banner4.png';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const HomeSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0); // State for current slide index
-  const images = [image, image1, image2, image3, image4]; // Array of image sources
+  const images = [banner3, banner1, banner2, banner4]; // Array of image sources
 
   // Effect to initialize AOS and set up auto-slide
   useEffect(() => {
@@ -29,7 +30,7 @@ const HomeSection = () => {
     <>
       {/* Hero Section with Carousel */}
       <div className="relative">
-        <Carousel className="w-[85%] mx-auto">
+        <Carousel className="w-full mx-auto">
           <CarouselContent className="space-x-4 sm:space-x-2">
             {images.map((img, index) => (
               <CarouselItem
@@ -39,45 +40,27 @@ const HomeSection = () => {
                 <img 
                   src={img} 
                   alt={`Image ${index + 1}`} 
-                  className="absolute inset-0 w-full min-h-screen object-cover"
+                  className="absolute inset-0 w-full h-[80%] object-cover"
                 />
-                {index === 1 && (
-                  <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="bg-black bg-opacity-20 p-6 rounded-lg shadow-lg">
-                    <h1 className="text-4xl font-bold text-white text-center">
-                      SKILLING TO EMPOWER AND SHAPING FUTURES <br /> Unlocking Potential for a Brighter Tomorrow
-                    </h1>
-                  </div>
-                </div>
+                {/* Button at the Bottom */}
+                <a 
+                  href="https://www.instagram.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="absolute bottom-32 left-1/2 transform -translate-x-1/2"
+                >
                 
-                )}
-                {index === 2 && (
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="bg-black bg-opacity-20 p-6 rounded-lg shadow-lg w-3/4 mx-auto">
-                      <h1 className="text-4xl font-bold text-white text-center">
-                        Industry-Ready Skills, Real-World Impact
-                      </h1>
-                    </div>
-                  </div>
-                )}
-                {index === 3 && (
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="bg-black bg-opacity-20 p-6 rounded-lg shadow-lg w-3/4 mx-auto">
-                      <h1 className="text-4xl font-bold text-white text-center">
-                        Transforming Talent through Practical Training
-                      </h1>
-                    </div>
-                  </div>
-                )}
-                {index === 4 && (
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="bg-black bg-opacity-20 p-6 rounded-lg shadow-lg w-3/4 mx-auto">
-                      <h1 className="text-4xl font-bold text-white text-center">
-                        Crafting Brighter Futures with Skill Development
-                      </h1>
-                    </div>
-                  </div>
-                )}
+                <button className="border-2 border-blue-500 text-blue-500 bg-blue-100 py-2 px-6 rounded-full text-lg font-medium shadow-sm hover:bg-blue-400 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 flex items-center justify-center space-x-2">
+                  <span>Connect with Us</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fillRule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L13.586 11H3a1 1 0 110-2h10.586l-3.293-3.293a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                  </svg>
+                </button>
+
+
+
+
+                </a>
               </CarouselItem>
             ))}
           </CarouselContent>
