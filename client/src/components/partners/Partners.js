@@ -20,7 +20,7 @@ const partners = [
 
 const Partners = () => {
   return (
-    <section className="partners-section py-16">
+    <section className="partners-section py-10">
       <h3 className="partners-section-title text-4xl font-semibold text-center text-gray-800 mb-8">
         Our Trusted Partners
       </h3>
