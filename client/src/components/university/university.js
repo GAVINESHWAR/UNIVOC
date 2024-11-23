@@ -35,7 +35,7 @@ const University = () => {
             {/* Button below the heading */}
             <a href="/about" className="block w-max mx-auto">
                 <button 
-                className="border-2 border-blue-500 text-blue-500 bg-blue-100 py-2 px-6 rounded-full text-lg font-medium shadow-sm hover:bg-blue-400 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transform hover:scale-105" 
+                className="border-2 border-sky-600 text-sky-600 bg-blue-100 py-2 px-6 rounded-full text-lg font-medium shadow-sm hover:bg-sky-800 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-sky-600 focus:ring-offset-2 transform hover:scale-105" 
                 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900"
                 >
                 About

@@ -2,13 +2,12 @@
 .App {
   font-family: 'Poppins', Arial, sans-serif;
   min-height: 100vh;
-  background-color: linear-gradient(to bottom, #AEDDFF, #FFFFFF);
+  /* background-color: linear-gradient(to bottom, #AEDDFF, #FFFFFF); */
 }
 body {
   font-family: 'Poppins', Arial, sans-serif;
   min-height: 100vh;
-  background: linear-gradient(to bottom, rgba(204, 235, 255, 0.6), rgba(255, 255, 255, 0.6));
-
+  /* background: linear-gradient(to bottom, rgba(204, 235, 255, 0.6), rgba(255, 255, 255, 0.6)); */
   margin: 0;
 }
 

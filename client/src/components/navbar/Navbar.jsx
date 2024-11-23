@@ -41,40 +41,33 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navigation Links */}
-        <div className="space-x-6 font-semibold mx-3 hidden md:flex items-center text-black">
-          <ul className="flex space-x-6">
+        <div className="space-x-8 font-extrabold mx-3 hidden md:flex items-center text-black">
+          <ul className="flex space-x-4">
 
-          <li>
-            <NavLink 
-              to='/home' 
-              className="transition-all duration-300 ease-in-out text-white bg-gradient-to-r from-sky-500 to-blue-700 py-2 px-5 rounded-full shadow-lg transform scale-105 hover:scale-95 hover:from-sky-400 hover:to-blue-600">
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/contact"
-              className="transition-all duration-300 ease-in-out text-white bg-gradient-to-r from-sky-500 to-blue-700 py-2 px-5 rounded-full shadow-lg transform scale-105 hover:scale-95 hover:from-sky-400 hover:to-blue-600">
-              Contact
-            </NavLink>
-          </li>
-          <li>
-            <NavLink 
-              to='/about' 
-              className="transition-all duration-300 ease-in-out text-white bg-gradient-to-r from-sky-500 to-blue-700 py-2 px-5 rounded-full shadow-lg transform scale-105 hover:scale-95 hover:from-sky-400 hover:to-blue-600">
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink 
-              to='/Register' 
-              className="transition-all duration-300 ease-in-out text-white bg-gradient-to-r from-sky-500 to-blue-700 py-2 px-5 rounded-full shadow-lg transform scale-105 hover:scale-95 hover:from-sky-400 hover:to-blue-600">
-              Register
-            </NavLink>
-          </li>
+          <NavLink 
+            to='/home' 
+            className="transition-all duration-300 ease-in-out text-sky-600 bg-transparent border-2 border-sky-600 py-2 px-4 rounded-full shadow-md transform hover:scale-105 hover:bg-sky-800 hover:text-white hover:border-transparent">
+            Home
+          </NavLink>
 
-            
-          </ul>
+          <NavLink 
+            to='/contact' 
+            className="transition-all duration-300 ease-in-out text-sky-600 bg-transparent border-2 border-sky-600 py-2 px-4 rounded-full shadow-md transform hover:scale-105 hover:bg-sky-800 hover:text-white hover:border-transparent">
+            Contact
+          </NavLink>
+
+          <NavLink 
+            to='/about' 
+            className="transition-all duration-300 ease-in-out text-sky-600 bg-transparent border-2 border-sky-600 py-2 px-4 rounded-full shadow-md transform hover:scale-105 hover:bg-sky-800 hover:text-white hover:border-transparent">
+            About
+          </NavLink>
+
+          <NavLink 
+            to='/Register' 
+            className="transition-all duration-300 ease-in-out text-sky-600 bg-transparent border-2 border-sky-600 py-2 px-4 rounded-full shadow-md transform hover:scale-105 hover:bg-sky-800 hover:text-white hover:border-transparent">
+            Register
+          </NavLink>
+          </ul> 
         </div>
 
         {/* Mobile menu button */}
