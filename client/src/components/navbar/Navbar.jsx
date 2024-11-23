@@ -1,5 +1,7 @@
 import { faBell, faEnvelope, faPhoneAlt, faTags } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLock } from '@fortawesome/free-solid-svg-icons';
+
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../../images/logo3-removebg-preview.png';
@@ -34,40 +36,42 @@ const Navbar = () => {
 
       {/* Navbar section */}
       <div className="p-2 flex justify-between items-center max-w-full transition-all ease-in-out">
-        {/* bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300  shadow-md */}
-        {/* Logo */}
-        <div className="text-lg font-bold">
-          <img src={logo} alt="Univoc Logo" className="h-[25%] w-[25%] mx-1 transition-transform duration-300 transform hover:scale-105" />
+
+        <img src={logo} alt="Univoc Logo" className="h-[15%] w-[15%] mx-1 transition-transform duration-300 transform hover:scale-105" />
+
+        <div className= "flex space-x-8 items-center" >
+          
+          <NavLink to='/home' className="text-base font-semibold text-gray-800 hover:text-sky-600 hover:underline transition-all duration-300 ease-in-out transform hover:scale-110"> Home </NavLink>
+
+          <NavLink to='/about' className="text-base font-semibold text-gray-800 hover:text-sky-600 hover:underline transition-all duration-300 ease-in-out transform hover:scale-110"> About Us </NavLink>
+                
+          <NavLink to='/services' className="text-base font-semibold text-gray-800 hover:text-sky-600 hover:underline transition-all duration-300 ease-in-out transform hover:scale-110"> Our Services </NavLink>
+                
+          <NavLink to='/students ' className="text-base font-semibold text-gray-800 hover:text-sky-600 hover:underline transition-all duration-300 ease-in-out transform hover:scale-110"> For Students </NavLink>
+                
+          <NavLink to='/hr' className="text-base font-semibold text-gray-800 hover:text-sky-600 hover:underline transition-all duration-300 ease-in-out transform hover:scale-110"> For HR </NavLink>
+        
         </div>
 
-        {/* Desktop Navigation Links */}
-        <div className="space-x-8 font-extrabold mx-3 hidden md:flex items-center text-black">
-          <ul className="flex space-x-4">
-
-          <NavLink 
-            to='/home' 
-            className="transition-all duration-300 ease-in-out text-sky-600 bg-transparent border-2 border-sky-600 py-2 px-4 rounded-full shadow-md transform hover:scale-105 hover:bg-sky-800 hover:text-white hover:border-transparent">
-            Home
+        <div className=" flex space-x-8 items-center mr-4">
+          
+          <NavLink to='/hr' className="text-base font-semibold text-gray-800 flex items-center space-x-2 hover:text-sky-600 hover:underline transition-all">
+            <FontAwesomeIcon icon={faLock} className="text-gray-800" />
+            <span>Login</span>
           </NavLink>
-
+                
           <NavLink 
-            to='/contact' 
-            className="transition-all duration-300 ease-in-out text-sky-600 bg-transparent border-2 border-sky-600 py-2 px-4 rounded-full shadow-md transform hover:scale-105 hover:bg-sky-800 hover:text-white hover:border-transparent">
-            Contact
-          </NavLink>
 
-          <NavLink 
-            to='/about' 
-            className="transition-all duration-300 ease-in-out text-sky-600 bg-transparent border-2 border-sky-600 py-2 px-4 rounded-full shadow-md transform hover:scale-105 hover:bg-sky-800 hover:text-white hover:border-transparent">
-            About
-          </NavLink>
-
-          <NavLink 
             to='/Register' 
-            className="transition-all duration-300 ease-in-out text-sky-600 bg-transparent border-2 border-sky-600 py-2 px-4 rounded-full shadow-md transform hover:scale-105 hover:bg-sky-800 hover:text-white hover:border-transparent">
-            Register
+            className="inline-block text-center text-white bg-sky-600 py-2 px-6 rounded-lg shadow-md transform transition-all duration-300 ease-in-out hover:bg-sky-700 hover:scale-105 hover:shadow-xl focus:outline-none">
+
+            Sign Up For Free
+
           </NavLink>
-          </ul> 
+
+
+        </div>
+          
         </div>
 
         {/* Mobile menu button */}
@@ -78,8 +82,6 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-      </div>
-
       
     </>
   );
