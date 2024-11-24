@@ -31,6 +31,10 @@
   border-radius: 50%;
   padding: 10px;
   cursor: pointer;
+<<<<<<< HEAD
+  margin-bottom: 1.5rem;
+=======
+>>>>>>> origin/princi
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }

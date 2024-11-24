@@ -6,11 +6,16 @@ import Benefits from "./components/benefit/Benefit.js";
 import BenefitDetail from "./components/benefitDetail/BenefitDetail.js";
 import Footer from "./components/footer/Footer.js";
 import HomeSection from "./components/HomeSection.jsx";
+import Login from "./components/login/Login.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
 import Partners from "./components/partners/Partners";
+import Register from "./components/register/Register.jsx";
 import Testimonials from "./components/testimonials/Testimonials.js";
+<<<<<<< HEAD
+=======
 import Register from "./components/Register.jsx";
 import Login from "./components/Login.jsx";
+>>>>>>> origin/princi
 import University from "./components/university/university";
 
 
