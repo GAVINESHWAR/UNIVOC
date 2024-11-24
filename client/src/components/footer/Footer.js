@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { faFacebookF, faInstagram, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from '../../images/logo3-removebg-preview.png';
@@ -6,6 +7,16 @@ const Footer = () => {
     return (
         <>
             <footer className="py-6 px-4 bg-blue-100">
+=======
+import React from 'react';
+import logo from '../../images/logo3-removebg-preview.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faTwitter, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
+
+const Footer = () => {
+    return (
+        <footer className="py-6 px-4 bg-gray-100">
+>>>>>>> origin/princi
             <div className="container mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-center md:text-left">
                 
                 {/* Logo and Description */}
@@ -58,7 +69,14 @@ const Footer = () => {
                 </div>
             </div>
 
+<<<<<<< HEAD
            
+=======
+            {/* Footer Bottom Section */}
+            <div className="bg-sky-800 py-2 mt-4 text-center text-white">
+                <p>&copy; 2024 Univoc. All Rights Reserved | <a href="/privacy" className="hover:underline">Privacy Policy</a> | <a href="/terms" className="hover:underline">Terms of Service</a></p>
+            </div>
+>>>>>>> origin/princi
         </footer>
          {/* Footer Bottom Section */}
          <div className="bg-sky-800 py-3 text-center text-white p-0">
