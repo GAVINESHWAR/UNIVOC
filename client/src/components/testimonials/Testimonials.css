@@ -13,21 +13,31 @@
   .swiper {
     width: 100%;
     height: 100%;
+    position: relative;
   }
   
   .swiper-slide {
-    /* text-align: center; */
-    /* font-size: 18px; */
+    width: auto;
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    z-index: 1; 
   }
   
-  .swiper-slide .swiper-slide-active {
-    opacity: 1;
+  .swiper-slide-active {
+    transform: scale(1.2);
+    z-index: 10;
     filter: blur(0);
-    transform: scale(1);
+  }
+  
+  .swiper-slide:not(.swiper-slide-active) {
+    filter: blur(2px);
+  }
+  
+  .swiper-wrapper {
+    display: flex;
   }
   
   .testimonial-card {
@@ -39,14 +49,10 @@
     transition: transform 0.3s ease;
   }
   
-  .testimonial-image {
-    display: flex;
-  }
   .testimonial-title-h3 {
     text-transform: uppercase;
     text-align: start;
-    margin-top: 2.5rem;
-    margin-left: 3rem;
+    margin: 2.5rem 0 0 3rem;
     font-size: 1.2rem;
     font-weight: 800;
   }
@@ -57,19 +63,21 @@
     font-size: 1.1rem;
   }
   
-  .testimonial-image > .testimonial-img {
+  .testimonial-image {
+    display: flex;
+  }
+  
+  .testimonial-img {
     width: 4.5rem;
     height: 4.5rem;
     object-fit: cover;
     border-radius: 50%;
-    margin-left: 2rem;
-    margin-top: 2rem;
+    margin: 2rem 0 0 2rem;
   }
   
-  .testimonial-card-body > .testimonial-icon {
+  .testimonial-icon {
     width: 2rem;
-    margin-left: 2rem;
-    margin-top: 1rem;
+    margin: 1rem 0 0 2rem;
   }
   
   .testimonial-p {
@@ -78,31 +86,3 @@
     text-align: start;
   }
   
-  /* Ensure that the swiper container allows the slides to overflow */
-.swiper {
-    position: relative;
-  }
-  
-  /* Keep the cards in their natural size */
-  .swiper-slide {
-    width: auto; /* Let the card be displayed in its natural size */
-    transition: transform 0.3s ease, z-index 0.3s ease;
-    z-index: 1; /* Non-active slides have lower z-index */
-  }
-  
-  /* Active slide should overflow and grow */
-  .swiper-slide-active {
-    transform: scale(1.2); /* Active slide overflows */
-    z-index: 10; /* Active slide on top */
-    transition: transform 0.3s ease, z-index 0.3s ease;
-  }
-  
-  /* Optionally blur non-active slides */
-  .swiper-slide:not(.swiper-slide-active) {
-    filter: blur(2px);
-  }
-  
-  /* Optional: Add spacing between slides */
-  .swiper-wrapper {
-    display: flex;
-  }
