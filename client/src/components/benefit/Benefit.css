@@ -2,6 +2,7 @@
 .benefit-section {
   width: 100%;
   height: auto;
+  margin-top: 4rem;
   padding: 2.5rem 0 4rem 0; /* Reduced padding for a smaller height */
   background: linear-gradient(135deg, rgba(103, 183, 247, 0.8), rgba(58, 93, 169, 0.8)); /* Lighter, semi-transparent gradient */
   display: flex;

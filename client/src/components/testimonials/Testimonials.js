@@ -60,14 +60,14 @@ const Testimonials = () => {
       <h3 className="testimonial-section-title-h3">What Our Clients Say</h3>
       <Swiper
   loop={true}
-  centeredSlides={true} // Centers the active slide
-  slidesPerView= "auto" // Ensure slides are displayed at their actual size
-  spaceBetween={20}     // Adjust space between slides to allow for overlap
+  centeredSlides={true} 
+  slidesPerView= "auto"
+  spaceBetween={20}
   autoplay={{ delay: 3000, pauseOnHover: true }}
   effect="coverflow"
   coverflowEffect={{
     rotate: 0,
-    stretch: 0, // Allows the active slide to overlap
+    stretch: 0,
     depth: 300,
     modifier: 1,
     slideShadows: false,

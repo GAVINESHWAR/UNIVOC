@@ -24,14 +24,27 @@ const Benefits = () => {
   };
 
   useEffect(() => {
-    AOS.init({ duration: 2000, once: true }); // Initialize AOS with options
+    AOS.init({ duration: 1000 }); // Initialize AOS with options
   }, []);
 
   return (
 
     <div className="benefit-section">
-      <h2 data-aos="fade-up" className="benefits-heading">Benefits</h2>
-      <div data-aos="fade-down" className="benefits-container">
+      <h2 
+        data-aos="fade-up" 
+        className="benefits-heading" 
+        data-aos-duration="3000" 
+        data-aos-delay="2000"  
+      >
+        Benefits
+      </h2>
+
+      <div 
+        data-aos="fade-up" 
+        className="benefits-container" 
+        data-aos-duration="3000" 
+        data-aos-delay="2000"  
+      >
         {benefitsData.map((benefit, index) => {
           const icon = iconMapping[benefit.title] || <FaRegSmile className="benefit-icon" />;
           return (

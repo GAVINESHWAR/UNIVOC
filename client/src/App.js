@@ -1,6 +1,4 @@
-// App.js
-
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './index.css';
 
 import About from "./components/about/About";
@@ -8,28 +6,38 @@ import Benefits from "./components/benefit/Benefit.js";
 import BenefitDetail from "./components/benefitDetail/BenefitDetail.js";
 import Footer from "./components/footer/Footer.js";
 import HomeSection from "./components/HomeSection.jsx";
+import Login from "./components/login/Login.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
 import Partners from "./components/partners/Partners";
+import Register from "./components/register/Register.jsx";
 import Testimonials from "./components/testimonials/Testimonials.js";
+import University from "./components/university/university";
+
 
 function AppContent() {
-  const location = useLocation();
-  const isAboutPage = location.pathname === "/about";
-  const isBenefitDetailPage = location.pathname.startsWith("/benefit/");
-
   return (
-    <>
-      {!isBenefitDetailPage && <Navbar />}
-      {!isAboutPage && !isBenefitDetailPage && <HomeSection />}
-      <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="/" element={<Benefits />} />
-        <Route path="/benefit/:id" element={<BenefitDetail />} />
-      </Routes>
-      {!isBenefitDetailPage && <Partners />}
-      {!isBenefitDetailPage && <Testimonials />}
-      {!isBenefitDetailPage && <Footer />}
-    </>
+    <Routes>
+      {/* Route for HomeSection and additional content */}
+      <Route
+        path="/"
+        element={
+          <>
+            <Navbar />
+            <HomeSection />
+            <University/>
+            <Benefits />
+            <Partners />
+            <Testimonials />
+            <Footer />
+          </>
+        }
+      />
+      {/* Other Routes */}
+      <Route path="/about" element={<About />} />
+      <Route path="/benefit/:id" element={<BenefitDetail />} />
+      <Route path="/Register" element={<Register />} />
+      <Route path="/Login" element={<Login />} />
+    </Routes>
   );
 }
 

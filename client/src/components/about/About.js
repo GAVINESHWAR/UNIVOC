@@ -1,8 +1,10 @@
 import '../about/About.css'
+import Navbar from '../navbar/Navbar'
 function About() {
   return (
     <>
-<main className="about-container">
+    <Navbar/>
+    <main className="about-container">
       <section className="about-hero">
         <div className="about-hero-content">
           <h1 className="title">About Us</h1>
