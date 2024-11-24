@@ -16,6 +16,7 @@ const Register = () => {
     email:"",
     phoneNumber:"",
     password:"",
+    role:"",
   });
 
   const navigate = useNavigate();
@@ -29,7 +30,7 @@ const Register = () => {
    const submitHandler = async(e) =>{
      e.preventDefault();
       // Validate input fields
-      if (!input.fullName || !input.email || !input.phoneNumber || !input.password) {
+      if (!input.fullName || !input.email || !input.phoneNumber || !input.password || !input.role) {
       toast.error("Please fill all fields!");
       return;
   }
@@ -38,6 +39,7 @@ const Register = () => {
       email: input.email,
       phoneNumber: input.phoneNumber,
       password: input.password,
+      role:input.role.
     };
    
      try{
@@ -117,6 +119,33 @@ const Register = () => {
               className="register-input"
               />
           </div>
+          
+          <div className="radio-button">
+            <RadioGroup className="flex items-center gap-4 my-5">
+              <div className="flex items-center space-x-2">
+                <Input 
+                    type="radio" 
+                    name="role" 
+                    value="Student" 
+                    checked={input.role === 'Student'}
+                    onChange={changeEventHandler}
+                    className="cursor-pointer w-4 h-4"  
+                  />
+                <Label htmlFor="option-one">Student</Label>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Input 
+                    type="radio" 
+                    name="role" 
+                    value="Recruiter" 
+                    checked={input.role === 'Recruiter'}
+                    onChange={changeEventHandler}
+                    className="cursor-pointer w-4 h-4" 
+                 />
+                <Label htmlFor="option-two">Recruiter</Label>
+              </div>
+            </RadioGroup>
+            </div>
           
           <Button
             type="submit" 
