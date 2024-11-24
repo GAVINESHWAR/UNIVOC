@@ -1,8 +1,14 @@
 /* about us */
 
 .about-container {
-    background :radial-gradient(circle, #fffaf0, #feebc8, #fbd38d);
+  background: radial-gradient(circle, #fffaf0, #feebc8, #fbd38d);
+  width: 70%; /* Set the width to 70% */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add padding for spacing inside the box */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: add a slight shadow for depth */
 }
+
   .about-hero {
     padding: 4rem 2rem;
   }
