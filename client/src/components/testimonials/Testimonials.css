@@ -1,160 +1,108 @@
-
-/* Testimonial Section */
-.testimonial-section {
-    width: 100%;
-    height: 450px;
-    margin: 0 auto;
-    padding: 2rem;
-    border-radius: 25px;
-background: linear-gradient(180deg, rgba(196, 232, 255, 0.60) 0%, rgba(209, 255, 200, 0.50) 100%);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Testimonial Section Title */
-.testimonial-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20rem;
-    margin-bottom: 1.5rem;
-}
-
 .testimonial-section-title-h3 {
-    color: #525252;
-    font-family: Lato, sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.prev, .next {
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.prev:hover, .next:hover {
-    transform: scale(1.1);
-}
-
-/* Swiper Container */
-.swiper {
-    padding: 1rem 0;
-}
-
-/* Swiper Slide */
-.swiper-slide {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  
+  .testimonial-section {
+    height: 28rem;
+    margin-bottom: 5rem;
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    /* text-align: center; */
+    /* font-size: 18px; */
+    background: #fff;
     display: flex;
     justify-content: center;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    z-index: 1;
-}
-
-.swiper-slide-active {
-    opacity: 1;
-    z-index: 10;
-}
-
-/* Testimonial Card */
-.testimonial-card {
-    width: 415px;
-    height: 250px;
-    flex-shrink: 0;
-    background: #fff;
-    
-}
-
-/* Content Inside the Card */
-.testimonial-card-body {
-    display: flex;
     align-items: center;
-    gap: 1.5rem;
-}
-
-/* Testimonial Image */
-
-.testimonial-star-img {
-    width: 440px;
+  }
+  
+  .swiper-slide .swiper-slide-active {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+  }
+  
+  .testimonial-card {
+    width: 62rem !important;
+    height: 16rem !important;
+    margin-top: 3rem;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .testimonial-image {
     display: flex;
-    justify-content: space-between;
-}
-.testimonial-image {
-    position: relative;
-}
-.testimonial-img {
-    width: 60px;
-    height: 60px;
-    flex-shrink: 0;
+  }
+  .testimonial-title-h3 {
+    text-transform: uppercase;
+    text-align: start;
+    margin-top: 2.5rem;
+    margin-left: 3rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+  
+  .testimonial-title-p {
+    margin-left: 3rem;
+    text-align: start;
+    font-size: 1.1rem;
+  }
+  
+  .testimonial-image > .testimonial-img {
+    width: 4.5rem;
+    height: 4.5rem;
     object-fit: cover;
-    margin-top: 1.5rem;
-    margin-left: 1.5rem;
-}
-.testimonial-star {
-    display: flex;
-    transform: translateX(-50%);
-    color: #ffcc00; /* Golden color for the stars */
+    border-radius: 50%;
+    margin-left: 2rem;
     margin-top: 2rem;
   }
   
-  .testimonial-star i {
-    margin: 0 2px;
-    font-size: 18px; /* Adjust the size of the stars */
-  }
-
-/* Testimonial Name and Title */
-.testimonial-name {
-    color: #525252;
-    font-family: Lato;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: .5rem;
-    margin-left: 1.5rem;
-}
-
-.testimonial-title-h3 {
-    color: #525252;
-    font-family: Lato;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: .5rem;
-    margin-left: 1.5rem;
-}
-
-.testimonial-title-p {
-    color: #525252;
-font-family: Lato;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-left: 1.5rem;
-}
-/* Testimonial Text */
-.testimonial-p {
-    font-size: 0.8rem;
-    color: #555;
+  .testimonial-card-body > .testimonial-icon {
+    width: 2rem;
+    margin-left: 2rem;
     margin-top: 1rem;
-    line-height: 1.5;
-    margin-left: 1.5rem;
-}
-
-/* Dots Navigation */
-.icon {
-    margin-top: 1.5rem;
+  }
+  
+  .testimonial-p {
+    margin-left: 4rem;
+    font-size: 12px;
+    text-align: start;
+  }
+  
+  /* Ensure that the swiper container allows the slides to overflow */
+.swiper {
+    position: relative;
+  }
+  
+  /* Keep the cards in their natural size */
+  .swiper-slide {
+    width: auto; /* Let the card be displayed in its natural size */
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    z-index: 1; /* Non-active slides have lower z-index */
+  }
+  
+  /* Active slide should overflow and grow */
+  .swiper-slide-active {
+    transform: scale(1.2); /* Active slide overflows */
+    z-index: 10; /* Active slide on top */
+    transition: transform 0.3s ease, z-index 0.3s ease;
+  }
+  
+  /* Optionally blur non-active slides */
+  .swiper-slide:not(.swiper-slide-active) {
+    filter: blur(2px);
+  }
+  
+  /* Optional: Add spacing between slides */
+  .swiper-wrapper {
     display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-}
-
-.icon circle {
-    cursor: pointer;
-    transition: fill 0.3s ease;
-    fill: #525252;
-    
-}
-.icon circle.active-icon {
-    fill: #FF008A; /* Color for active icon */
-    
-}
+  }
