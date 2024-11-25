@@ -43,6 +43,7 @@ const Register = () => {
       phoneNumber: input.phoneNumber,
       password: input.password,
       role:input.role.RadioGroup
+      role:input.role.
     };
    
      try{

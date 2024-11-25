@@ -7,21 +7,25 @@ import BenefitDetail from "./components/benefitDetail/BenefitDetail.js";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer.js";
 import HomeSection from "./components/HomeSection.jsx";
-import Login from "./components/login/Login.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
 import Partners from "./components/partners/Partners";
 import Register from "./components/register/Register.jsx";
 import Experience from "./components/student-experience/Experience";
 import Testimonials from "./components/testimonials/Testimonials.js";
 import University from "./components/university/university";
-
+import Login from "./components/Login.jsx";
+import Features from "./components/features/features.js";
+import Banner from "./components/Banner.js";
 
 function AppContent() {
   return (
     <Routes>
+      {/* Default Route: Banner */}
+      <Route path="/" element={<Banner />} />
+
       {/* Route for HomeSection and additional content */}
       <Route
-        path="/"
+        path="/home"
         element={
           <>
             <Navbar />
@@ -40,7 +44,7 @@ function AppContent() {
       <Route path="/benefit/:id" element={<BenefitDetail />} />
       <Route path="/Register" element={<Register />} />
       <Route path="/Login" element={<Login />} />
-      <Route path="/contact" element={<Contact />} />
+       <Route path="/contact" element={<Contact />} />
     </Routes>
   );
 }
