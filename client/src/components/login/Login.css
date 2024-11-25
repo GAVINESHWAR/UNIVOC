@@ -143,3 +143,20 @@
     border: 2px solid #789ADE;
     background: #FFF;
 }
+.forgot-password-link {
+  color: var(--blue-1-7, #607acd);
+  font-family: Nunito;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.forgot-password-link:hover {
+  color: #789ADE;
+  text-decoration: underline;
+}
