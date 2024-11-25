@@ -1,3 +1,5 @@
+import RadioGroup from '../ui/radioGroup'; // Adjust the path as per your project structure
+
 import axios from 'axios';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
@@ -9,6 +11,7 @@ import Testimonials from '../testimonials/Testimonials';
 import { Button } from '../ui/button';
 import Input from '../ui/input';
 import Label from '../ui/label';
+
 
 const Register = () => {
   const [input , setInput] = useState({
@@ -39,6 +42,7 @@ const Register = () => {
       email: input.email,
       phoneNumber: input.phoneNumber,
       password: input.password,
+      role:input.role.RadioGroup
       role:input.role.
     };
    

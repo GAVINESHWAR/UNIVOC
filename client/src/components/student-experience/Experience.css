@@ -1,0 +1,74 @@
+
+.student-heading {
+    width: 390px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Alexandria;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+}
+.students-experience {
+    width: 100%;
+    height: 494px;
+    flex-shrink: 0;
+    background: linear-gradient(86deg, #0E4A67 58.14%, rgba(149, 213, 234, 0.40) 76.03%);
+    font-family: "Arial", sans-serif;
+}
+.experience-text {
+    width: 372px;
+    height: 205px;
+    flex-shrink: 0;
+    color: var(--Color, #FFF);
+    font-family: Alexandria;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 157px;
+    margin-left: 59px;
+}
+.experience-image {
+  flex: 1;
+  padding: 100px;
+  display: flex;
+  position: relative;
+  background: transparent;
+  margin-top: 40px;
+}
+.experience-container {
+    display: flex;
+    justify-content: space-between;
+}
+.arrow {
+    width: 195px;
+height: 88.121px;
+transform: rotate(-0.79deg);
+flex-shrink: 0;
+stroke-width: 2px;
+stroke: var(--Color, #FFF);
+}
+.img-1 {
+    width: 200px;
+height: 350px;
+flex-shrink: 0;
+margin-top: 3px;
+}
+.img-2{
+    width: 200px;
+height: 355px;
+flex-shrink: 0;
+}
+.img-3{
+    width: 200px;
+height: 400px;
+flex-shrink: 0;
+margin-top: 28px;
+}
+.img-4{
+    width: 180px;
+height: 351px;
+flex-shrink: 0;
+margin-top: 0;
+}

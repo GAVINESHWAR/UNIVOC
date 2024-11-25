@@ -1,17 +1,9 @@
 import { faBell, faEnvelope, faLock, faPhoneAlt, faTags } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-<<<<<<< HEAD
-=======
-import { faLock } from '@fortawesome/free-solid-svg-icons';
->>>>>>> origin/princi
 
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../../images/logo3-removebg-preview.png';
-<<<<<<< HEAD
-=======
-import Register from '../Register';
->>>>>>> origin/princi
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,7 +33,6 @@ const Navbar = () => {
       </div>
 
       {/* Navbar section */}
-<<<<<<< HEAD
       <div className="p-3 flex justify-between bg-blue-100 items-center max-w-full transition-all ease-in-out">
 
         <img src={logo} alt="Univoc Logo" className="h-[10%] w-[10%] mx-1 transition-transform duration-300 transform hover:scale-105" />
@@ -57,33 +48,14 @@ const Navbar = () => {
           <NavLink to='/students ' className="text-base font-semibold text-gray-800 hover:text-sky-600  transition-all duration-300 ease-in-out transform hover:scale-110"> For Students </NavLink>
                 
           <NavLink to='/hr' className="text-base font-semibold text-gray-800 hover:text-sky-600 transition-all duration-300 ease-in-out transform hover:scale-110"> For HR </NavLink>
-=======
-      <div className="p-2 flex justify-between items-center max-w-full transition-all ease-in-out">
 
-        <img src={logo} alt="Univoc Logo" className="h-[15%] w-[15%] mx-1 transition-transform duration-300 transform hover:scale-105" />
-
-        <div className= "flex space-x-8 items-center" >
-          
-          <NavLink to='/home' className="text-base font-semibold text-gray-800 hover:text-sky-600 hover:underline transition-all duration-300 ease-in-out transform hover:scale-110"> Home </NavLink>
-
-          <NavLink to='/about' className="text-base font-semibold text-gray-800 hover:text-sky-600 hover:underline transition-all duration-300 ease-in-out transform hover:scale-110"> About Us </NavLink>
-                
-          <NavLink to='/services' className="text-base font-semibold text-gray-800 hover:text-sky-600 hover:underline transition-all duration-300 ease-in-out transform hover:scale-110"> Our Services </NavLink>
-                
-          <NavLink to='/students ' className="text-base font-semibold text-gray-800 hover:text-sky-600 hover:underline transition-all duration-300 ease-in-out transform hover:scale-110"> For Students </NavLink>
-                
-          <NavLink to='/hr' className="text-base font-semibold text-gray-800 hover:text-sky-600 hover:underline transition-all duration-300 ease-in-out transform hover:scale-110"> For HR </NavLink>
->>>>>>> origin/princi
+          <NavLink to='/contact' className="text-base font-semibold text-gray-800 hover:text-sky-600 transition-all duration-300 ease-in-out transform hover:scale-110"> Contact Us </NavLink>
         
         </div>
 
         <div className=" flex space-x-8 items-center mr-4">
           
-<<<<<<< HEAD
           <NavLink to='/login' className="text-base font-semibold text-gray-800 flex items-center space-x-2 hover:text-sky-600 transition-all">
-=======
-          <NavLink to='/hr' className="text-base font-semibold text-gray-800 flex items-center space-x-2 hover:text-sky-600 hover:underline transition-all">
->>>>>>> origin/princi
             <FontAwesomeIcon icon={faLock} className="text-gray-800" />
             <span>Login</span>
           </NavLink>
